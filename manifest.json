@@ -1,13 +1,13 @@
 {
     "name": "Toggle Github builds visibility",
     "description": "Allows to hide or show success build. Handy, if you have tens/hundreds of builds and cannot determine which failed at the first sight.",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "manifest_version": 3,
     "content_scripts": [
         {
             "matches": ["https://*.github.com/*"],
             "run_at": "document_start",
-            "js": ["button.js"]
+            "js": ["addButton.js", "main.js"]
         }
     ]
 }

@@ -4,7 +4,7 @@ function addToggleSuccessBuildButton() {
     let toggleSuccessBuildsButton = document.createElement('button');
     toggleSuccessBuildsButton.setAttribute('aria-expanded', false);
     toggleSuccessBuildsButton.setAttribute('class', 'btn-link float-right');
-    toggleSuccessBuildsButton.innerText = 'Toggle success builds';
+    toggleSuccessBuildsButton.innerText = 'Hide success builds';
     toggleSuccessBuildsButton.style = "margin-left: 1rem;";
     toggleSuccessBuildsButton.addEventListener('click', () => {
         document.querySelectorAll('.octicon-check.color-text-success').forEach(function(element) {
@@ -12,28 +12,13 @@ function addToggleSuccessBuildButton() {
             let offsetParent = element.parentElement.offsetParent;
             if (offsetParent == null) {
                 actionItem.setAttribute('style', "display: flex !important;");
+                toggleSuccessBuildsButton.innerText = 'Hide success builds';
             } else {
                 actionItem.setAttribute('style', "display: none !important;");
+                toggleSuccessBuildsButton.innerText = 'Show success builds';
             }
         })
     })
 
     hideAllChecksButton.parentNode.insertBefore(toggleSuccessBuildsButton, hideAllChecksButton);
 }
-
-let callback = function(mutationsList) {
-    for (let mutation of mutationsList) {
-        for (let addedNode of mutation.addedNodes) {
-            if (addedNode.id == 'partial-pull-merging') {
-                addToggleSuccessBuildButton();
-            }
-        }
-    }
-};
-var observer = new MutationObserver(callback);
-observer.observe(document, {
-    attributes: true,
-    characterData: true,
-    childList: true,
-    subtree: true
-});

@@ -16,10 +16,10 @@ function toggleSuccessBuildsButtonClickCallback(evt) {
         let offsetParent = element.parentElement.offsetParent;
         if (offsetParent == null) {
             actionItem.setAttribute('style', "display: flex !important;");
-            evt.innerText = 'Hide success builds';
+            evt.target.innerText = 'Hide success builds';
         } else {
             actionItem.setAttribute('style', "display: none !important;");
-            evt.innerText = 'Show success builds';
+            evt.target.innerText = 'Show success builds';
         }
     })
 }

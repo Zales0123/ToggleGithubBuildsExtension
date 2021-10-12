@@ -1,6 +1,6 @@
 {
-    "name": "Toggle Github builds visibility",
-    "description": "Allows to hide or show success build. Handy, if you have tens/hundreds of builds and cannot determine which failed at the first sight.",
+    "name": "Toggle Github Builds Extension",
+    "description": "Allows to hide or show success builds. Handy, if you have tens/hundreds of builds and cannot determine which failed at the first sight.",
     "version": "0.0.3",
     "manifest_version": 3,
     "content_scripts": [

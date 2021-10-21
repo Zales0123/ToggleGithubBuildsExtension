@@ -8,6 +8,13 @@ function addToggleSuccessBuildButton() {
     toggleSuccessBuildsButton.addEventListener('click', toggleSuccessBuildsButtonClickCallback)
 
     hideAllChecksButton.parentNode.insertBefore(toggleSuccessBuildsButton, hideAllChecksButton);
+    hideAllChecksButton.addEventListener('click', function(event) {
+        if (event.target.innerText === 'Hide all checks') {
+            toggleSuccessBuildsButton.hidden = true;
+        } else {
+            toggleSuccessBuildsButton.hidden = false;
+        }
+    });
 }
 
 function toggleSuccessBuildsButtonClickCallback(evt) {

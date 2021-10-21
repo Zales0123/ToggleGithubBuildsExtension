@@ -1,13 +1,13 @@
 {
     "name": "Toggle Github Builds Extension",
     "description": "Allows to hide or show success builds. Handy, if you have tens/hundreds of builds and cannot determine which failed at the first sight.",
-    "version": "0.0.3",
+    "version": "0.0.4",
     "manifest_version": 3,
     "content_scripts": [
         {
             "matches": ["https://*.github.com/*"],
             "run_at": "document_start",
-            "js": ["addButton.js", "main.js"]
+            "js": ["toggleSuccessBuilds.js", "main.js"]
         }
     ]
 }

@@ -13,3 +13,7 @@ Handy, if you have tens/hundreds of builds and cannot determine which failed at 
 #### Hidden
 
 ![](images/hidden.png)
+
+#### Hidden (all)
+
+![](images/hidden-all.png)

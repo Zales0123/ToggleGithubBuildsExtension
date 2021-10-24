@@ -17,3 +17,15 @@ Handy, if you have tens/hundreds of builds and cannot determine which failed at 
 #### Hidden (all)
 
 ![](images/hidden-all.png)
+
+### Installation
+
+1. Download this repo as a [ZIP file](https://github.com/Zales0123/ToggleGithubBuildsExtension/archive/v0.1.0.zip)
+1. Unzip the file
+1. In Chrome go to the extensions page (`chrome://extensions`)
+1. Enable Developer Mode
+1. Load the extension's folder
+
+### License
+
+Extension is completely free and released under the [MIT License](https://github.com/Zales0123/ToggleGithubBuildsExtension/blob/master/LICENSE).

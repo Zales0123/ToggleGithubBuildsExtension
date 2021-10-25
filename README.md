@@ -26,6 +26,11 @@ Handy, if you have tens/hundreds of builds and cannot determine which failed at 
 1. Enable Developer Mode
 1. Load the extension's folder
 
+### Contribution
+
+If you found any bug or would like to propose some improvement, feel free to [open an issue](https://github.com/Zales0123/ToggleGithubBuildsExtension/issues)
+or [propose a Pull Request](https://github.com/Zales0123/ToggleGithubBuildsExtension/pulls) 🖖
+
 ### License
 
 Extension is completely free and released under the [MIT License](https://github.com/Zales0123/ToggleGithubBuildsExtension/blob/master/LICENSE).
